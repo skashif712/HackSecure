@@ -13,74 +13,47 @@ Set global username and email for Git (Locally).
 
 git config --global user.name "<your username>"
 git config --global user.email "<your email>"
-Initialise an empty Git Repository
 
-git init
 
-Clone an existing Git Repository
+git init >>>>  Initialise an empty Git Repository
+ 
+git clone <repository URL> >>>>  Clone an existing Git Repository
 
-git clone <repository URL>
+git add <filename> >>>>> >  Add file/stage to git
 
-Add file/stage to git
+git add .  >>>>>  Add all the files to git
 
-git add <filename>
+git commit -m "<your commit message>"   >>Commit all the staged files to git
 
-Add all the files to git
+git restore <filename>  >>>> Restore the file from being modified to Tracked
+git checkout <filename>  >>>>>> 
 
-git add .
+git status >>>>  Show the status of your Git respository
 
-Commit all the staged files to git
 
-git commit -m "<your commit message>"
+git branch  >>> Show the branches of your git repository
 
-Restore the file from being modified to Tracked
+git checkout -b <branch name>   >>>Checkout to a new branch
 
-git restore <filename>
-git checkout <filename>
 
-Show the status of your Git respository
 
-git status
+git checkout <branch name>  >>> Checkout to an existing branch
 
-Show the branches of your git repository
+git branch -d <branch name>   >>>>>Remove a branch from Git
 
-git branch
+git remote -v >>>>Show remote origin URL
 
-Checkout to a new branch
 
-git checkout -b <branch name>
+git remote add origin <your remote git URL>   >>>>Add remote origin URL
 
-Checkout to an existing branch
 
-git checkout <branch name>
+git remote remove origin   >>>>Remove remote origin URL
 
-Remove a branch from Git
+git fetch >>>>Fetch all the remote branches
 
-git branch -d <branch name>
 
-Show remote origin URL
+git push origin <branch name>   >>>Push your local changes to remote branch
 
-git remote -v
+git pull origin <branch name> >>>>Pull your remote changes to local branch
 
-Add remote origin URL
-
-git remote add origin <your remote git URL>
-
-Remove remote origin URL
-
-git remote remove origin 
-
-Fetch all the remote branches
-
-git fetch
-
-Push your local changes to remote branch
-
-git push origin <branch name>
-
-Pull your remote changes to local branch
-
-git pull origin <branch name>
-Check you git commits and logs
-
-git log
+git log   >>>>Check you git commits and logs
