@@ -2,5 +2,6 @@
 
 # Findings yourself with PWD
 
-Linux > pwd
+Linux > pwd 
+
 /root
