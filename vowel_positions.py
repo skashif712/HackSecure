@@ -10,6 +10,15 @@ def vowel_positions(s):
     return positions            # hand back the list
 
 
+def show_vowels(s):
+    positions = vowel_positions(s)   # get the vowel positions
+    print("Word:", s)
+    for i in positions:              # for each saved position...
+        print("  position", i, "->", s[i])   # show the number and its letter
+    print("  all positions:", positions)
+    print()
+
+
 # try it out
-print(vowel_positions("hello"))       # [1, 4]
-print(vowel_positions("HackSecure"))  # [1, 5, 7, 9]
+show_vowels("hello")
+show_vowels("HackSecure")
