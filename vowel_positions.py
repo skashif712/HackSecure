@@ -1,14 +1,15 @@
-VOWELS = set("aeiouAEIOU")
-
-
 def vowel_positions(s):
-    """Return a list of 0-based indices where s has a vowel (a, e, i, o, u, any case)."""
-    positions = []
-    for i, ch in enumerate(s):
-        if ch in VOWELS:
-            positions.append(i)
-    return positions
+    vowels = "aeiouAEIOU"   # the letters we care about
+    positions = []          # empty list to store the answers
+
+    for i in range(len(s)):     # go through every position: 0, 1, 2, ...
+        letter = s[i]           # grab the letter at that position
+        if letter in vowels:    # is it a vowel?
+            positions.append(i) # yes, so save its position
+
+    return positions            # hand back the list
 
 
-if __name__ == "__main__":
-    print(vowel_positions("HackSecure"))  # [1, 5, 7, 9]
+# try it out
+print(vowel_positions("hello"))       # [1, 4]
+print(vowel_positions("HackSecure"))  # [1, 5, 7, 9]
